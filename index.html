@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f7ecde">
+    <main>
+      <h1 class="tittle text-center my-5 py-2 position-relative ">Bookmarker</h1>
+      <p class="w-75 m-auto"></p>
+      <div class="container">
+        <h2 class="bookmark text-center mt-4">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <form class="w-100 my-4" action="">
+          <label for="websiteName" class="fw-bold"
+            ><i
+              class="fa-solid fa-book-bookmark pe-2"
+              style="color: #000000"
+            ></i>
+            Site Name:</label
+          >
+          <input
+            id="websiteName"
+            type="text"
+            placeholder="Bookmark Name"
+            class="form-control mt-3"
+          />
+          <label for="websiteUrl" class="fw-bold mt-3"
+            ><i class="fa-solid fa-link pe-2" style="color: #000000"></i> Site
+            URL:</label
+          >
+          <input
+            id="websiteUrl"
+            type="url"
+            placeholder="Website URL"
+            class="form-control mt-3"
+          />
+          <div class="d-flex flex-column justify-content-center align-items-center gap-4"">
+            <button
+              onclick="addWebsite()"
+              type="button"
+              id="submitBtn"
+              class="btn text-center rounded-2 my-4 px-5"
+            >
+              Submit
+            </button>
+          </div>
+          <p></p>
+        </form>
+
+        <table class="table mt-3 mb-5 text-center ">
+          <thead>
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Website URL</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

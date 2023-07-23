@@ -1,0 +1,87 @@
+.tittle {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+.tittle::before {
+  content: "";
+  position: absolute;
+  width: 17.5%;
+  height: 25%;
+  left: 41.4%;
+  bottom: 10px;
+  background-color: #fec260;
+  z-index: -1;
+  transition: 0.6s;
+}
+.mt-5 {
+  margin-top: 5rem !important;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s;
+}
+.bookmark {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.fa-book-bookmark:before {
+  content: "\e0bb";
+}
+.btn {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+}
+.btn1 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-border-color: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+  --bs-btn-hover-border-color: #6e8018;
+}
+.btn2 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #ba081d;
+}
+.table {
+  background-color:#F8F9FA !important;
+}
+.tittle:hover::before {
+  height: 50%;
+  transition: all 0.6s;
+}
+
+p {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: dotted;
+  border-left-style: none;
+  
+}
